@@ -1,0 +1,5 @@
+:80 {
+    reverse_proxy app1:80 app2:80 app3:80 {
+        lb_policy round_robin
+    }
+}
